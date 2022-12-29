@@ -13,6 +13,18 @@ import pandas as pd
 class apeIndex(Scene):
 
     def construct(self):
+        
+        titulo0 = Title("Gráficos de barras en Manim").shift(DOWN)
+        self.play(Create(titulo0))
+        
+        banner = ManimBanner()
+        banner.scale(0.2)
+        self.play(banner.create())
+        self.play(banner.expand())
+        self.wait()
+        self.play(Unwrite(banner))
+        self.play(Unwrite(titulo0))
+        
 
         titulo1 = Title("Ape index")
         self.play(Create(titulo1))
