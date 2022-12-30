@@ -18,7 +18,7 @@ class apeIndex(Scene):
         self.play(Create(titulo0))
         
         banner = ManimBanner()
-        banner.scale(0.2)
+        banner.scale(0.4)
         self.play(banner.create())
         self.play(banner.expand())
         self.wait()

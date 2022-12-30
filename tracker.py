@@ -7,33 +7,28 @@ class tracker(Scene):
 
     def construct(self):
         
-        #TÍTULO
-        
+        #1: MOSTRAR TÍTULO Y LOGO DE MANIM
         titulo1 = Title("Trackers en manim").shift(DOWN)
         banner = ManimBanner()
         banner.scale(0.4)
-        
         self.play(Create(titulo1), banner.create())
         self.play(banner.expand())
         self.wait(1)
         self.play(Unwrite(banner))
         
         
-        #PRIMERA EXPLICACIÓN
-        
+        #2: PRIMERA EXPLICACIÓN SOBRE EL USO DE TRACKERS
         texto1 = Text("El uso de trackers en manim permite realizar\nanimaciones complejas que logran\nefectos de movimiento notables.")
         texto1.scale(0.75)
         self.play(FadeIn(texto1), run_time=6)
 
-        
-        
-        #TE VOY A MOSTRAR UN POCO DE CÓDIGO
 
+        #3: CÓMO SE DEFINE UN TRACKER, MOSTRANDO CÓDIGO
         texto2=Text("Ésta es la llamada \nque se emplea para definir un tracker.")
         texto2.scale(0.75)
         self.play(ReplacementTransform(texto1, texto2))
         
-        #MOSTRAMOS EL CÓDIGO DEL TRACKER
+        #ELEMENTO CODE CON EL CÓDIGO DEL TRACKER
         code1 = '''
             class trackersEnEscena(Scene):
                  def construct(self):
@@ -48,15 +43,13 @@ class tracker(Scene):
         self.play(Unwrite(texto2), FadeOut(rendered_code1))
     
 
-        #ACLARACIÓN 1 SOBRE EL CÓDIGO
-        
+        #4: ACLARACIÓN SOBRE EL TRACKER
         texto3=Text("El tracker servirá como una variable que se modifica\ndurante la animación y a la que podemos acceder\npara actualizar el estado de diferentes objetos. ")
         texto3.scale(0.75)
         self.play(FadeIn(texto3))
         self.wait(3)
         
-        #ACLARACIÓN 2 SOBRE EL CÓDIGO y MOSTRAMOS EL CÓDIGO 2 DEL TRACKER
-        
+        #5: MOSTRAR EL CÓDIGO DE LA FUNCIÓN GET_VALUE()
         texto4=Text("La forma de acceder al valor que toma el tracker\nes usar la función 'get_value()' \ntal y como te mostramos a continuación:")
         texto4.scale(0.75)
         code2 = '''
@@ -74,7 +67,7 @@ class tracker(Scene):
         self.play(FadeOut(texto4), FadeOut(rendered_code2))
     
         
-        #INTRODUCIMOS EL EJEMPLO
+        #6: INTRODUCIMOS EL EJEMPLO
         
         texto5=Text("A continuación, vamos a ver un ejemplo \nde cómo emplear un tracker en una animación \nsobre el cálculo del mínimo de una función:")
         texto5.scale(0.75)
@@ -124,6 +117,10 @@ class tracker(Scene):
         #creamos una etiqueta que acompañará al punto
         label = MathTex("punto").add_updater(lambda m: m.next_to(dot, UP)).scale(0.7)
         
+        initial_point2 = [ax.coords_to_point(tracker.get_value(), func2(tracker.get_value()))]
+        #Creamos un objeto dibujable dot
+        dot2 = Dot(radius=.15, point=initial_point2, color=BLUE)
+        
         #definimos coordenadas del punto inicial
        
         def get_tangent_line():
@@ -149,6 +146,8 @@ class tracker(Scene):
             return line
         
         line = always_redraw(get_tangent_line)
+        
+        
         
         #creamos un updater para que actualice al punto
         dot.add_updater(lambda x: x.move_to(ax.c2p(tracker.get_value(), func(tracker.get_value()))))
@@ -181,6 +180,7 @@ class tracker(Scene):
         self.play(tracker.animate.set_value(1))
         self.wait(0.2)
         self.play(tracker.animate.set_value(4))
+        self.play(Create(dot2));
         self.wait(0.2)
         self.play(tracker.animate.set_value(2))
         self.wait(0.2)
