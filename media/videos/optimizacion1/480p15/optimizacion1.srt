@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:06,020
+Valencia, ebau, Junio de 2019. Ejercicio B3
+
+2
+00:00:06,066 --> 00:00:13,358
+Las coordenadas iniciales de los puntos A y B son cero cero y 250 cero
+
+3
+00:00:13,400 --> 00:00:18,316
+Empezaremos por situar ambos puntos en los ejes de coordenadas
+
+4
+00:00:22,400 --> 00:00:27,124
+Como hemos dicho antes el punto A se sitúa en cero cero
+
+5
+00:00:28,200 --> 00:00:33,524
+Y sabemos que el punto B se sitúa en 250 0
+
+6
+00:00:33,600 --> 00:00:37,748
+Cada uno de ellos se mueve con una velocidad distinta
+
+7
+00:00:39,800 --> 00:00:43,684
+Pongamos un reloj para poder activar la animación
+
+8
+00:00:43,733 --> 00:00:49,153
+Y mostremos también la distancia entre los dos puntos en cada momento
+
+9
+00:00:49,200 --> 00:00:52,654
+Ahora observa cómo se desplazan los móviles
+
+10
+00:00:52,754 --> 00:00:55,052
+a medida que el tiempo avanza
+
+11
+00:00:55,133 --> 00:00:58,681
+Y observa la posición final de los móviles.
+
+12
+00:00:58,733 --> 00:01:01,705
+Volvamos ahora al punto de partida
+
+13
+00:01:02,733 --> 00:01:05,849
+Y veamos el movimiento de ida y vuelta
+
+14
+00:01:05,933 --> 00:01:08,561
+Buscamos ese momento en el que la
+
+15
+00:01:08,661 --> 00:01:11,785
+distancia entre ambos móviles es mínima
+
+16
+00:01:11,866 --> 00:01:13,878
+¿Cuándo estarán más cerca?
+
+17
+00:01:15,866 --> 00:01:20,106
+Ese es el objetivo del problema, encontrar el momento
+
+18
+00:01:20,206 --> 00:01:24,118
+en que la distancia entre ambos móviles es mínima
+
