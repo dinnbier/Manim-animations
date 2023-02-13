@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/4266129954_345352296_709718847.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_2516401712_3330554183.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_4001982855_2717619570.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_2839592149_1235089127.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_3372942273_3473998076.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno2/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_2951572832_4129423813.mp4'

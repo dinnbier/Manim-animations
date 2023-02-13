@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno/480p15/partial_movie_files/SineCurveUnitCircle/4266129954_1636166871_3686465486.mp4'
+file 'file:/Users/adrianmartindinnbier/Library/CloudStorage/OneDrive-ElPilarValencia/GitHub/manim_animations/Manim-animations/media/videos/seno/480p15/partial_movie_files/SineCurveUnitCircle/1442284246_329969645_2602020275.mp4'

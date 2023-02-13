@@ -1,5 +1,6 @@
 from manim import *
 
+
 class logo(MovingCameraScene):
     
     def construct(self):
